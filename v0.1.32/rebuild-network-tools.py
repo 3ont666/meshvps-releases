@@ -219,7 +219,10 @@ def attribution(directory, manifest):
                f'Source archive: {manifest["source_url"]}\n'
                f'SHA-256: {manifest["source_sha256"].lower()}\n'
                'Includes modifications, pinned dependencies and licenses for these builds.\n')
-    result = {'SOURCES.txt': sources.encode('utf-8'), 'network-build.json': json_bytes(manifest)}
+    # Publication refs describe where the already-built payload was uploaded.
+    # Embedding that ref in the payload itself would create a circular checksum.
+    source_manifest = {key: value for key, value in manifest.items() if key not in ('binary_revision', 'installer_revision')}
+    result = {'SOURCES.txt': sources.encode('utf-8'), 'network-build.json': json_bytes(source_manifest)}
     for name in ('MODIFICATIONS.txt', 'build-info.json'):
         result[name] = (directory / name).read_bytes()
     for path in sorted((directory / 'licenses').rglob('*')):

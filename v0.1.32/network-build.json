@@ -24,7 +24,7 @@
     "Built with CGO disabled and Go 1.27.4",
     "Includes corresponding package sources and licenses for the six selected Windows/Linux amd64 builds"
   ],
-  "source_url": "https://raw.githubusercontent.com/3ont666/meshvps-releases/main/v0.1.32/network-sources.tar.xz",
+  "source_url": "https://raw.githubusercontent.com/3ont666/meshvps-releases/8fd453787fab2e32a502b94c9b8e5f6fdec73abf/v0.1.32/network-sources.tar.xz",
   "source_packages": {
     "engine": {
       "files": 5329,
@@ -37,5 +37,6 @@
   },
   "source_sha256": "6c6757f825f6b918a33bd22c29a7634247a3466401a2324a25b2095a2a5ecb3e",
   "source_archive": "network-sources.tar.xz",
-  "changed_date": "2026-11-20"
+  "changed_date": "2026-11-20",
+  "source_revision": "8fd453787fab2e32a502b94c9b8e5f6fdec73abf"
 }
