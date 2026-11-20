@@ -38,5 +38,6 @@
   "source_sha256": "6c6757f825f6b918a33bd22c29a7634247a3466401a2324a25b2095a2a5ecb3e",
   "source_archive": "network-sources.tar.xz",
   "changed_date": "2026-11-20",
-  "source_revision": "8fd453787fab2e32a502b94c9b8e5f6fdec73abf"
+  "source_revision": "8fd453787fab2e32a502b94c9b8e5f6fdec73abf",
+  "engine_core_version": "1.14.4+meshvps.0.1.32"
 }

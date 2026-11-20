@@ -67,6 +67,8 @@ def read_manifest(path):
             raise RebuildError(f'Invalid manifest field: {key}.')
     if manifest.get('engine_tags', ENGINE_TAGS) != ENGINE_TAGS:
         raise RebuildError('This builder requires engine_tags with_quic, with_gvisor.')
+    if manifest.get('engine_core_version', '1.14.4+meshvps.' + manifest['version']) != '1.14.4+meshvps.' + manifest['version']:
+        raise RebuildError('Preserve the upstream Engine semantic version and identify the MeshVPS build separately.')
     url = manifest.get('source_url', '')
     if not isinstance(url, str) or not re.fullmatch(r'https?://[^\s]+', url):
         raise RebuildError('The manifest needs a corresponding-source URL.')
@@ -185,7 +187,8 @@ def check_go(go, expected):
 def build_binaries(go, directory, output, manifest):
     check_go(go, manifest['go_version'])
     version = manifest['version']
-    engine_flags = f'-s -w -X github.com/sagernet/sing-box/constant.Version={version}'
+    engine_core_version = '1.14.4+meshvps.' + version
+    engine_flags = f'-s -w -X github.com/sagernet/sing-box/constant.Version={engine_core_version}'
     ygg_flags = ('-s -w -X github.com/yggdrasil-network/yggdrasil-go/src/version.buildName=MeshVPS '
                  f'-X github.com/yggdrasil-network/yggdrasil-go/src/version.buildVersion=0.5.15-meshvps.{version}')
     # Publish only once all six builds have succeeded. A failed toolchain cannot

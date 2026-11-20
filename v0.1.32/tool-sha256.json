@@ -1,8 +1,8 @@
 {
-  "meshvps-engine.exe": "b3cbb9936c270859ff2e8c1d189f3aa627d37e24fa98a6dcc3d91fccd5046f1c",
-  "meshvps-engine-linux.tar.gz": "eae9d43707a62e97dae1d6b70ab2ac20166dbdc7ef338851ce7cfe45ea26e855",
+  "meshvps-engine.exe": "4237314a9dd7869b989dbf4bda042f54d14562ae6f0bbf85bdb524255d6526e7",
+  "meshvps-engine-linux.tar.gz": "0224a8fb0a77e87cdb1f81fe6ec205fd1056c9c2983df191d542d0ebf5be44cc",
   "yggdrasil.exe": "17402c69adc006a327cba6b30cf287b4029e22ca3f86fea0c771f3e4147bebd9",
   "yggdrasilctl.exe": "e241e73e5cf97a9aee2dd8b9bc6bdf4ed6aca640a19e72d44a839c39fecdf1d6",
-  "yggdrasil-linux.deb": "e0a758006007d1f87a28477df2b13b84a852da7c0684a7799c13442014981fd7",
+  "yggdrasil-linux.deb": "e6798e372a780876943bc1bf357f3decf18b5ece97f3fc5f5a442dca21ca1bb8",
   "wintun.dll": "e5da8447dc2c320edc0fc52fa01885c103de8c118481f683643cacc3220dafce"
 }
