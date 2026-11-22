@@ -1,0 +1,45 @@
+{
+  "engine": {
+    "repository": "SagerNet/sing-box",
+    "tag": "v1.14.4",
+    "commit": "c005f35300ce76427dc285481ec5695f5b179cd2",
+    "archive_sha256": "024382c49feb4798674c6adde511444af1db182d11055e5514b327720ba53983"
+  },
+  "yggdrasil": {
+    "repository": "yggdrasil-network/yggdrasil-go",
+    "tag": "v0.5.15",
+    "commit": "2c7f050fc5398ecd8ac5f77e9bb5bd91aa2e9e35",
+    "archive_sha256": "46bc406c1d99ecc7217d7cd1a8d77d8a05d50b1feaf3c1c614be2eec45486e7a"
+  },
+  "version": "0.1.35",
+  "go_version": "go1.27.4",
+  "engine_name": "MeshVPS Engine",
+  "engine_tags": [
+    "with_quic",
+    "with_gvisor"
+  ],
+  "changes": [
+    "Pinned security updates in go.mod and go.sum",
+    "Renamed derivative Engine CLI and version output",
+    "Built with CGO disabled and Go 1.27.4",
+    "Includes corresponding package sources and licenses for the six selected Windows/Linux amd64 builds",
+    "Yggdrasil admin capability authentication; TCP admin requires a per-session token"
+  ],
+  "source_url": "https://raw.githubusercontent.com/3ont666/meshvps-releases/edbeea5631e863f2f61091bbcd28edf56d209bc1/v0.1.35/network-sources.tar.xz",
+  "source_packages": {
+    "engine": {
+      "files": 5329,
+      "bytes": 42026017
+    },
+    "yggdrasil": {
+      "files": 1570,
+      "bytes": 15399530
+    }
+  },
+  "source_sha256": "f789b8aaf3db059cd03c63341a7fa75023ead0c2e23ee509e0109ac10462446e",
+  "source_archive": "network-sources.tar.xz",
+  "changed_date": "2026-11-22",
+  "source_revision": "edbeea5631e863f2f61091bbcd28edf56d209bc1",
+  "binary_revision": "547086e3a483977ab6796fcb6d13e2ed1d4c76da",
+  "engine_core_version": "1.14.4+meshvps.0.1.35"
+}
