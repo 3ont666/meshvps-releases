@@ -1,0 +1,27 @@
+MeshVPS network component changes вЂ” 2026-11-20
+
+MeshVPS Engine 0.1.32 is a modified derivative of sing-box 1.14.4 at
+c005f35300ce76427dc285481ec5695f5b179cd2. Dependency versions in go.mod/go.sum
+were updated for security fixes. The CLI name and displayed version were
+changed to MeshVPS Engine. The upstream authors are not affiliated with MeshVPS.
+
+Yggdrasil 0.5.15 at 2c7f050fc5398ecd8ac5f77e9bb5bd91aa2e9e35 is rebuilt
+with updated go.mod/go.sum dependencies and MeshVPS build identification.
+
+All six supported binaries use Go 1.27.4, CGO disabled, Windows/Linux amd64.
+The Engine tags are with_quic,with_gvisor. Corresponding package sources for
+these builds and upstream license notices are included. The full upstream
+source trees are included; additional upstream features or platforms can
+require further module sources pinned in go.sum. Compiler Go is separate.
+
+Rebuild using rebuild-network-tools.py and the matching network-build.json
+provided alongside this archive or in the MeshVPS source package.
+
+MeshVPS 0.1.35, 2026-11-22:
+Yggdrasil local admin API now supports a per-session AdminToken capability,
+checks it before every handler using a constant-time digest comparison, and
+refuses TCP administration without a token of at least 32 characters. Tokens
+are omitted from responses. yggdrasilctl reads YGGDRASIL_ADMIN_TOKEN from the
+environment; protected Unix sockets remain compatible without a token.
+Includes admin authentication regression tests. Routing, wire protocol and
+Yggdrasil identities remain compatible with upstream 0.5.15.
