@@ -40,6 +40,6 @@
   "source_archive": "network-sources.tar.xz",
   "changed_date": "2026-11-22",
   "source_revision": "edbeea5631e863f2f61091bbcd28edf56d209bc1",
-  "binary_revision": "547086e3a483977ab6796fcb6d13e2ed1d4c76da",
+  "binary_revision": "81698e117ebf15f4f40257562c9b47dbbfd3d017",
   "engine_core_version": "1.14.4+meshvps.0.1.35"
 }
