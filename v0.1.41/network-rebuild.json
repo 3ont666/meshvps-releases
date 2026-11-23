@@ -1,0 +1,17 @@
+{
+  "go_version": "go1.27.4",
+  "package_only": false,
+  "sha256": {
+    "meshvps-engine-linux": "dd95d956f271f0134964d37c75e0fb060255075d9fba9580a74f07b694c97ed2",
+    "meshvps-engine-linux.tar.gz": "f9b02932417ddcf573537a65e11d6d2de1dd9695e9e409833eb99aa44c217efc",
+    "meshvps-engine.exe": "f0a035f6cce102d4cfe874727fa7b855b1e45c28885bc9bf6f6df8fd0e8736a7",
+    "yggdrasil-linux": "6ae4532ae8d171d1c033331a0961af6f08f078cf9276df5a1bf58d12a4188fc0",
+    "yggdrasil-linux.deb": "3fff08ea751c1ca3fb4677c82d9c8fe60bdbacebceb7e64fa1f22507c0c3c302",
+    "yggdrasil.exe": "f375ff521024ff4c58e1635047e4652aae376e9618673035d1f189271c3ac4c7",
+    "yggdrasilctl-linux": "a62f85fde1626dcee493a8ffadfc784c7bd27302e13db07803f9cf4fc051879d",
+    "yggdrasilctl.exe": "e611ac909bded87a3725b226601261c4561826eaa832c4a1508c9ccc5cd6eefa"
+  },
+  "source_sha256": "2a48d79905669a1c02c2380c532a957418792e4a6e8eaf2de2f213f6def7bbaf",
+  "source_url": "https://raw.githubusercontent.com/3ont666/meshvps-releases/d2ec70ef977f31d5ac35055dc335c4220adb587e/v0.1.41/network-sources.tar.xz",
+  "version": "0.1.41"
+}
