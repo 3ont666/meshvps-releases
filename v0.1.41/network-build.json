@@ -1,0 +1,47 @@
+{
+  "engine": {
+    "repository": "SagerNet/sing-box",
+    "tag": "v1.14.4",
+    "commit": "c005f35300ce76427dc285481ec5695f5b179cd2",
+    "archive_sha256": "024382c49feb4798674c6adde511444af1db182d11055e5514b327720ba53983"
+  },
+  "yggdrasil": {
+    "repository": "yggdrasil-network/yggdrasil-go",
+    "tag": "v0.5.15",
+    "commit": "2c7f050fc5398ecd8ac5f77e9bb5bd91aa2e9e35",
+    "archive_sha256": "46bc406c1d99ecc7217d7cd1a8d77d8a05d50b1feaf3c1c614be2eec45486e7a"
+  },
+  "version": "0.1.41",
+  "go_version": "go1.27.4",
+  "engine_name": "MeshVPS Engine",
+  "engine_tags": [
+    "with_quic",
+    "with_gvisor"
+  ],
+  "changes": [
+    "Pinned security updates in go.mod and go.sum",
+    "Renamed derivative Engine CLI and version output",
+    "Built with CGO disabled and Go 1.27.4",
+    "Includes corresponding package sources and licenses for the six selected Windows/Linux amd64 builds",
+    "Mode-0600 local live user API for VLESS/Hysteria2 without dropping established sessions",
+    "Race-safe user-map swaps and immutable connection identities"
+  ],
+  "source_url": "https://raw.githubusercontent.com/3ont666/meshvps-releases/d2ec70ef977f31d5ac35055dc335c4220adb587e/v0.1.41/network-sources.tar.xz",
+  "source_packages": {
+    "engine": {
+      "files": 5333,
+      "bytes": 42034353
+    },
+    "yggdrasil": {
+      "files": 1570,
+      "bytes": 15399530
+    }
+  },
+  "source_sha256": "2a48d79905669a1c02c2380c532a957418792e4a6e8eaf2de2f213f6def7bbaf",
+  "source_archive": "network-sources.tar.xz",
+  "changed_date": "2026-11-23",
+  "engine_core_version": "1.14.4+meshvps.0.1.41",
+  "live_user_api": 1,
+  "source_revision": "d2ec70ef977f31d5ac35055dc335c4220adb587e",
+  "binary_revision": "9648d45643a103bf15d9b10d0bded13baeada7f0"
+}
